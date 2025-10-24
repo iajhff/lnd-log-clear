@@ -200,36 +200,6 @@ Receiver: Dave
 
 ---
 
-## Real Attack Output
-
-```bash
-$ go run forensic_analysis.go ~/.lnd/data/graph/mainnet/channel.db
-
-⚠️  PRIVACY LEAK DETECTED!
-Found 598 forwarding events in database
-
-Timeline:
-  First: 2025-09-24 06:44:01
-  Last: 2025-10-24 02:28:10
-  Period: 30 days
-
-Channel Pairs:
-  123456 → 789012: 157 times (7.7M msat fees)
-  234567 → 789012: 155 times (7.2M msat fees)
-  123456 → 345678: 145 times (7.5M msat fees)
-
-Traffic:
-  Busiest hour: 19:00 (45 forwards)
-  Busiest day: Oct 21 (40 forwards)
-
-Financials:
-  Total volume: 29,241,421 sats routed
-  Total fees: 29,241 sats earned
-  Fee rate: 0.1%
-```
-
----
-
 ## What This Means
 
 From your database alone, an attacker knows:
