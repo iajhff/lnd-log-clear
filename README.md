@@ -21,5 +21,5 @@ go run clear_db.go ~/.lnd/data/graph/mainnet/channel.db \
 
 ```bash
 # Cron job (daily)
-0 3 * * * go run clear_db.go ~/.lnd/data/graph/mainnet/channel.db --older-than=1d circuit-fwd-log closed-chan-bucket
+0 3 * * * go run clear_db.go ~/.lnd/data/graph/mainnet/channel.db --older-than=1d circuit-fwd-log closed-chan-bucket historical-chan-bucket
 ```
